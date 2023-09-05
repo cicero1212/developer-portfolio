@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: var(--font-default);
+}
+
+:root {
+    --bg-black-color: #151515;
+    --dark-gray-color: #242424;
+    --green-color: #4EE1A0;
+    --gray-color: #242424;
+    --white-smoke-color: #d9d9d9c5;
+    --white-color: #FFFFFF;
+
+    --font-default: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: var(--bg-black-color);
+    color: var(--white-color);
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+/* INICIO DO HEADER ------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    max-width: 1070px !important;
+    z-index: 999;
+}
+
+header .logo-text {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.444px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+header nav a {
+    display: flex;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+header nav a:first-child {
+    margin: unset;
+}
+
+header nav a img {
+    width: 23px;
+}
+/* FIM DO HEADER ------------------------------------------------- */
+
+
+/* INICIO DO CIRCLE ------------------------------------------------- */
+.content-main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 120px;
+    left: -80px;
+    z-index: -99;
+}
+/* FIM DO CIRCLE ------------------------------------------------- */
+
+
+/* INICIO DO MAIN ------------------------------------------------- */
+main {
+    height: 100vh;
+}
+
+.bg-main {
+    background-image: url('../images/image-profile-desktop.webp');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-width: 1065px;
+    margin: auto;
+}
+
+.container.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container.main h1 {
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    margin-top: 100px;
+    padding: 30px 0px;
+    width: 730px;
+    text-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container.main h1 #nice-to {
+    width: fit-content;
+}
+
+.container.main h1 #meet-you {
+    width: fit-content;
+}
+
+.container.main h1 #name {
+    display: inline-block;
+    position: relative;
+}
+
+.container.main h1 #name span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 6px;
+    background-color: var(--green-color);
+    z-index: -99;
+}
+
+.container.main p {
+    color: var(--white-smoke-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    width: 430px;
+    text-shadow: 1px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container.main .box-button-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+}
+
+.container.main .box-button-contact a{
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green-color);
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.1s;
+}
+
+.container.main .box-button-contact a:hover {
+    color: var(--green-color);
+}
+
+.container.main .box-button-contact img {
+    width: 125px;
+}
+/* FIM DO MAIN ------------------------------------------------- */
+
+
+/* INICIO DA SECTION EXPERIENCE ------------------------------------------------- */
+#section-exp {
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: 150px;
+}
+
+.container.experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--white-smoke-color);
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px 15px;
+}
+
+.box-experience {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    padding: 0px 15px;
+}
+
+.box-experience h2 {
+    color: var(--white-color);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    margin-bottom: 14px;
+}
+
+.box-experience p {
+    color: var(--white-smoke-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.circle-right-exp {
+    position: absolute;
+    bottom: 0px;
+    right: -300px;
+}
+/* FIM DA SECTION EXPERIENCE ------------------------------------------------- */
+
+
+/* INICIO DA SECTION PROJECTS ------------------------------------------------- */
+.section-projects {
+    margin-bottom: 140px;
+}
+
+.container.projects {
+    padding: 0px 30px;
+}
+
+.project-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.project-text h2 {
+    color: var(--white-color);
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    text-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-text a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green-color);
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.1s;
+}
+
+.project-text a:hover {
+    color: var(--white-smoke-color);
+}
+
+.projects-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.projects-box .box-project {
+    width: 510px;
+    position: relative;
+}
+
+.projects-box .box-project img {
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.projects-box .box-project .hover-view-project {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 50px;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 92px);
+}
+
+.projects-box .box-project .hover-view-project a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green-color);
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projects-box .box-project .hover-view-project a:hover {
+    color: var(--white-smoke-color);
+}
+
+.projects-box .box-project h5 {
+    color: var(--white-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.projects-box .box-project ul {
+    display: flex;
+    width: fit-content;
+    gap: 18px;
+}
+
+.projects-box .box-project ul li {
+    list-style: none;
+    color: var(--white-smoke-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+/* FIM DA SECTION PROJECTS ------------------------------------------------- */
+
+
+/* INICIO DA SECTION CONTACT ------------------------------------------------- */
+.section-contact {
+    background-color: var(--dark-gray-color);
+    margin-top: 150px;
+    padding-top: 85px;
+}
+
+.container.contact {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--white-smoke-color);
+    padding: 50px 30px;
+}
+
+.contact-left-side {
+    flex: 1;
+}
+
+.contact-left-side h2 {
+    color: var(--white-color);
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    margin-bottom: 35px;
+    text-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-left-side p {
+    width: 445px;
+    color: var(--white-smoke-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.contact-right-side {
+    flex: 1;
+}
+
+.contact-right-side form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right-side form input,
+.contact-right-side form textarea {
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.222px;
+    background-color: transparent;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom: 1px solid var(--white-color);
+    margin-top: 20px;
+}
+
+.contact-right-side form textarea {
+    height: 107px;
+    resize: none;
+}
+
+.contact-right-side form .submit-input-contact input {
+    width: fit-content;
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green-color);
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.contact-right-side form .submit-input-contact input:hover {
+    color: var(--white-smoke-color);
+}
+
+.contact-right-side form .submit-input-contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.contact-right-side form .false {
+    border-bottom: 1px solid #FF6F5B;
+}
+
+.contact-right-side form .true {
+    border-bottom: 1px solid var(--green-color);
+}
+
+.contact-right-side form .email-input-area,
+.contact-right-side form .name-input-area {
+    position: relative;
+}
+
+.contact-right-side form .email-input-area input,
+.contact-right-side form .name-input-area input,
+.contact-right-side form .textarea-area textarea {
+    width: 100%;
+}
+
+.contact-right-side form .invalid-email,
+.contact-right-side form .invalid-name,
+.contact-right-side form .invalid-textarea {
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+    color: #FF6F5B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.167px;
+    margin-top: 5px;
+}
+
+.contact-right-side form .email-input-area svg,
+.contact-right-side form .name-input-area svg {
+    display: none;
+    position: absolute;
+    top: calc(50% - 13px);
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    color: #FF6F5B;
+}
+/* FIM DA SECTION CONTACT ------------------------------------------------- */
+
+
+/* INICIO DO FOOTER ------------------------------------------------- */
+footer {
+    background-color: var(--dark-gray-color);
+    padding: 50px 0px;
+}
+
+.container.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.container.footer .logo-text-footer {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.444px;
+}
+
+.container.footer address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container.footer address a {
+    width: 35px;
+}
+
+.container.footer address a img {
+    width: 25px;
+}
+/* FIM DO FOOTER ------------------------------------------------- */
+
+
+
+/* LAPTOP: ------------------------------------------------- */
+@media(max-width: 1084px) {
+    .container.header {
+        width: 100%;
+    }
+
+    .circle {
+        left: -250px;
+    }
+
+    .container.main, .container.header {
+        padding: 0px 35px;
+    }
+
+    .container.main h1 {
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -2.045px;
+        width: fit-content;
+    }
+    
+    .container.main h1 #meet-you {
+        display: block;
+    }
+
+    .container.main h1 #name span::before {
+        z-index: 1;
+    }
+
+    .container.main .box-button-contact {
+        width: 690px;
+    }
+
+    .container.main .box-button-contact img {
+        width: 90px;
+    }
+
+    .container.experience {
+        height: fit-content;
+    }
+
+    .box-experience {
+        margin: 20px 0px;
+    }
+
+    .projects-box .box-project {
+        width: 350px;
+    }
+
+    .projects-box {
+        gap: 50px 50px;
+    }
+}
+
+
+/* TABLET: ------------------------------------------------- */
+@media(max-width: 820px) {
+    .bg-main {
+        background-image: url('../images/image-profile-tablet.webp');
+    }
+
+    .container.main h1 {
+        font-size: 68px;
+    }
+
+    .container.main .box-button-contact {
+        width: 500px;
+    }
+
+    .projects-box .box-project {
+        width: 330px;
+    }
+
+    .projects-box {
+        gap: 80px 25px;
+    }
+
+    .projects-box .box-project .hover-view-project {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: unset;
+        width: fit-content;
+        height: unset;
+        margin-top: 20px;
+        gap: 32px;
+    }
+
+    .container.contact {
+        flex-direction: column;
+        gap: 80px;
+        width: 90%;
+    }
+
+    .contact-left-side h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .contact-left-side p {
+        text-align: center;
+        width: fit-content;
+    }
+}
+
+
+/* MOBILE: ------------------------------------------------- */
+@media(max-width: 698px) {
+    .content-main {
+        height: calc(100vh + 180px);
+    }
+
+    .bg-main {
+        background-image: url('../images/image-profile-mobile.webp');
+        background-position: bottom;
+        background-size: contain;
+        height: 75vh;
+    }
+
+    .container.header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0px;
+    }
+
+    header .logo-text {
+        margin-bottom: 25px;
+    }
+
+    .circle {
+        left: -400px;
+    }
+
+    .container.main {
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container.main .main-infos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .container.main h1 {
+        text-align: center;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -1px;
+    }
+
+    .container.main h1 #meet-you {
+        display: inline-block;
+    }
+
+    .container.main h1 #name span::before {
+        height: 5px;
+    }
+
+    .container.main p {
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .container.main .box-button-contact {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .container.main .box-button-contact img {
+        position: absolute;
+        right: -75px;
+        top: -60px;
+        width: fit-content;
+    }
+
+    .container.experience {
+        justify-content: center;
+        border-bottom: 1px solid var(--white-smoke-color);
+    }
+
+    .box-experience {
+        align-items: center;
+    }
+
+    .project-text {
+        flex-direction: column;
+    }
+    
+    .project-text h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+
+    .projects-box .box-project h5 {
+        font-size: 20px;
+    }
+
+    .projects-box .box-project .hover-view-project {
+        margin-top: 11px;
+    }
+
+    .projects-box .box-project ul li {
+        font-size: 15px;
+    }
+
+    .projects-box .box-project .hover-view-project a {
+        font-size: 15px;
+    }
+
+    .container.footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
